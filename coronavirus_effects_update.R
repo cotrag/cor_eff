@@ -62,7 +62,7 @@ pulse_data_grouped <- full_join(pulse_data_grouped_def, pulse_data_grouped_not_d
 pulse_data_grouped
 
 pulse_data_grouped <- pulse_data_grouped %>%
-  mutate(pct_def = (def/not_def)*100)
+  mutate(pct_def = (def/(not_def + def))*100)
 
 
 round(pulse_data_grouped$pct_def, digits = 2)
@@ -262,7 +262,7 @@ pulse_data_grouped_wk_6 <- full_join(pulse_data_grouped_def_wk_6,
 pulse_data_grouped_wk_6
 
 pulse_data_grouped_wk_6 <- pulse_data_grouped_wk_6 %>%
-  mutate(pct_def = (def/not_def)*100)
+  mutate(pct_def = (def/(not_def+ def))*100)
 
 
 round(pulse_data_grouped_wk_6$pct_def, digits = 2)
