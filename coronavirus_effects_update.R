@@ -207,7 +207,8 @@ exp(coef(model_with_race))
 # Structural forces are working to cause certain people to suffer more than others
 exp(coef(model_with_race))[3] -1
 
-
+model_sum <- stargazer(model_no_race, model_with_race, 
+          type = "html", out = "covid_eff.html")
 
 
 #### UPDATE-- ADDING June 4 – June 9 SURVEY ####
