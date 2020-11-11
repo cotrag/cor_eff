@@ -1,6 +1,6 @@
 ### coronavirus impacts
 
-#### plotting instances of default in June####
+#### plotting instances of default in May####
 pulse_data_weight <- read_csv("pulse2020_repwgt_puf_10.csv")
 
 pulse_data <- read_csv("pulse2020_puf_10.csv")
